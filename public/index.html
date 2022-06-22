@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Monitor</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <style>
+        table, th, td {
+            padding-left: 10px;
+            border: 1px solid gray;
+            border-collapse: collapse;
+            overflow: hidden;
+            table-layout: fixed;
+        }
+        .th-br{
+            background-color: linen;
+        }
+       tr {
+           border-left: 2px solid darkslategrey;
+           border-right: 2px solid darkslategrey;
+       }
+       tr:first-child{
+           border-top: 2px solid darkslategrey;
+       }
+       tr:last-child{
+           border-bottom: 2px solid darkslategrey;
+       }
+        .bold-border-bottom{
+            border-bottom: 2px solid darkslategrey;
+        }
+        .bold-border-right{
+            border-right: 2px solid darkslategrey;
+        }
+        .red {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+<script id="template" type="text/x-handlebars-template">
+    {{#each this}}
+    <section>
+        <h3>{{@key}}</h3>
+    </section>
+    <table style="width:100%">
+        <tr class="th-br">
+            <th colspan="2" class="bold-border-right">{{@key}}</th>
+            <th colspan="6" class="bold-border-right">Last 1 Min</th>
+            <th colspan="6" class="bold-border-right">Last 5 Min</th>
+            <th colspan="6" class="bold-border-right">Last 30 Min</th>
+            <th rowspan="2" class="bold-border-bottom"></th>
+        </tr>
+        <tr class="th-br bold-border-bottom">
+            <td>Server Code</td>
+            <td class="bold-border-right">Test</td>
+            <td>Min</td>
+            <td>Max</td>
+            <td>avg</td>
+            <td>90%ile</td>
+            <td>median</td>
+            <td class="red bold-border-right">failures</td>
+            <td>Min</td>
+            <td>Max</td>
+            <td>avg</td>
+            <td>90%ile</td>
+            <td>median</td>
+            <td class="red bold-border-right">failures</td>
+            <td>Min</td>
+            <td>Max</td>
+            <td>avg</td>
+            <td>90%ile</td>
+            <td>median</td>
+            <td class="red">failures</td>
+        </tr>
+        {{#each this}}
+            {{#each this}}
+                <tr {{#if (isEq @index 3)}}class="bold-border-bottom"{{/if}} >
+                    {{#if @first}}
+                        <td class="th-br bold-border-bottom" rowspan="4">{{@../key}}</td>
+                    {{/if}}
+                    <td class="th-br bold-border-right"">{{@key}}</td>
+                    <td>{{last1min.min}}</td>
+                    <td>{{last1min.max}}</td>
+                    <td>{{last1min.mean}}</td>
+                    <td>{{last1min.[90%]}}</td>
+                    <td>{{last1min.[50%]}}</td>
+                    <td class="red bold-border-right">{{last1min.failures}}</td>
+                    <td>{{last5min.min}}</td>
+                    <td>{{last5min.max}}</td>
+                    <td>{{last5min.mean}}</td>
+                    <td>{{last5min.[90%]}}</td>
+                    <td>{{last5min.[50%]}}</td>
+                    <td class="red bold-border-right">{{last5min.failures}}</td>
+                    <td>{{last30min.min}}</td>
+                    <td>{{last30min.max}}</td>
+                    <td>{{last30min.mean}}</td>
+                    <td>{{last30min.[90%]}}</td>
+                    <td>{{last30min.[50%]}}</td>
+                    <td class="red bold-border-right">{{last30min.failures}}</td>
+                    <td><a href={{query @../../key @../key}} target="blank">Details</a></td>
+                </tr>
+            {{/each}} 
+        {{/each}}
+    </table>
+    {{/each}}
+</script>
+
+<div id="target">
+</div>
+
+<script>
+
+    Handlebars.registerHelper('isEq', (x, y) => x == y);
+    Handlebars.registerHelper('query', (customer, server) => `details?customer=${customer}&server=${server}`);
+
+    Promise.all([fetch('/tests').then(r => r.json()),
+                fetch('/servers').then(r => r.json())])
+            .then(([tests, customers]) => getData(tests, customers))
+
+    function getData(tests, customers){
+        fetch(`/statistics?${uniqueStr()}`)
+            .then(response => response.json())
+            .then(data => {
+                const statistics = {};
+                for(let c in customers){
+                    statistics[c] = Object.assign(...customers[c].map(s => { return { [s] : Object.assign({}, ...tests.map(t => {
+                        return { [t]: {
+                            last1min: getDataByPeriod(data, 'last1min', c, s, t),
+                            last5min: getDataByPeriod(data, 'last5min', c, s, t),
+                            last30min: getDataByPeriod(data, 'last30min', c, s, t)
+                        } }
+                    }))} }));
+
+                }
+                const template = Handlebars.compile(document.getElementById('template').innerHTML);
+                document.getElementById('target').innerHTML = template(statistics);
+            });
+        setTimeout(() => getData(tests, customers), 5000);
+    };
+
+    function getDataByPeriod(data, period, c, s, t){
+        return data[`('${c}', '${s}', '${t}', '${period}')`] 
+    }
+
+    function uniqueStr(){
+        return Math.random().toString(36).slice(2)
+    }
+
+    function getDetails(customer, server, test){
+        const params = `customer=${customer}&server=${server}&test=${test}`;
+        fetch('/details?' + params).then(res => res.json()).then(d => console.log(d));
+    }
+
+</script>
+
+</body>
+</html>

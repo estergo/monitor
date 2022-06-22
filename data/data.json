@@ -1,0 +1,884 @@
+[
+  {
+    "customer": "IBI",
+    "servers": [
+      {
+        "id": 1,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "customer": "Meitav",
+    "servers": [
+      {
+        "id": 1,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "tests": [
+          {
+            "testType": "A_B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "B_C",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "C_D",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          },
+          {
+            "testType": "A_B_C*",
+            "statistics": {
+              "last1Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last5Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              },
+              "last30Min": {
+                "min": 0.5,
+                "max": 1.5,
+                "avg": 1.0,
+                "median": 1.2,
+                "percentile": 1.3
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
